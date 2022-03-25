@@ -1,0 +1,39 @@
+﻿<Window x:Class="ClimateDatabaseByLenni.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClimateDatabaseByLenni"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="firstNameTextBox" HorizontalAlignment="Left" Margin="0,41,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lastNameTextBox" HorizontalAlignment="Left" Margin="130,41,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.535,0.62"/>
+        <Label Content="Förnamn" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="77"/>
+        <Label Content="Efternamn" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" Width="77"/>
+        <Button x:Name="addObseverBtn" Content="Lägg till ny observatör" HorizontalAlignment="Left" Margin="44,75,0,0" VerticalAlignment="Top" Width="163" Click="addObseverBtn_Click"/>
+        <ListBox x:Name="observersListBox" Margin="581,0,10,188"/>
+        <Button x:Name="showObserversBtn" Content="Visa alla klimatobservatörer" HorizontalAlignment="Left" Margin="414,10,0,0" VerticalAlignment="Top" Width="162" Click="showObserversBtn_Click"/>
+        <Button x:Name="deleteChosenObserverBtn" Content="Ta bort vald observatör" HorizontalAlignment="Left" Margin="662,390,0,0" VerticalAlignment="Top" Width="128" Click="deleteChosenObserverBtn_Click"/>
+        <Button x:Name="btnBringForthObserver" Content="Ta fram vald observatör" HorizontalAlignment="Left" Margin="421,142,0,0" VerticalAlignment="Top" Width="148" Click="btnBringForthObserver_Click"/>
+        <Label Content="Registrera Luftemperatur" HorizontalAlignment="Left" Margin="352,0,0,0" VerticalAlignment="Center" Width="148"/>
+        <TextBox x:Name="textBoxAirTemp" HorizontalAlignment="Left" Margin="356,228,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Height="18"/>
+        <Button Content="Registrera luftemperatur" HorizontalAlignment="Left" Margin="356,261,0,0" VerticalAlignment="Top" Width="139" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="207,204,0,0" Text="Geografisk plats&#xD;&#xA;Land: Sverige&#xD;&#xA;Område: Abisko" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="56"/>
+        <Label x:Name="labelChosenFirstName"  HorizontalAlignment="Left" Margin="237,166,0,0" VerticalAlignment="Top" Width="147" Height="22"/>
+        <Label x:Name="labelChosenLastName"  HorizontalAlignment="Left" Margin="414,167,0,0" VerticalAlignment="Top" Width="150" Height="21"/>
+        <Label x:Name="labelInvisibleId"  HorizontalAlignment="Left" Margin="526,199,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBoxObservation" Margin="356,336,334,34"/>
+        <Button x:Name="btnGetMeasurements" Content="Ta fram mätpunkter" HorizontalAlignment="Left" Margin="337,410,0,0" VerticalAlignment="Top" Width="148" Click="btnGetMeasurements_Click"/>
+        <Label Content="Typ" HorizontalAlignment="Left" Margin="21,313,0,0" VerticalAlignment="Top" Width="39"/>
+        <Label Content="förkortning st C" HorizontalAlignment="Left" Margin="107,313,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="textBoxCelsiusAntal" HorizontalAlignment="Left" Margin="215,350,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnBringObservations" Content="Ta fram observationer" HorizontalAlignment="Left" Margin="360,306,0,0" VerticalAlignment="Top" Width="132" Click="btnBringObservations_Click"/>
+        <Label Content="förkortning st C" HorizontalAlignment="Left" Margin="215,288,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnChangeValue" Content="Ändra värdet" HorizontalAlignment="Left" Margin="217,380,0,0" VerticalAlignment="Top" Width="100" Click="btnChangeValue_Click"/>
+        <ListBox x:Name="listBoxType" Margin="5,348,695,4"/>
+        <ListBox x:Name="listBoxAbbreviation" Margin="110,348,590,4"/>
+        <Button x:Name="btnChosenAbbreviationValue" Content="lägg till värdet" HorizontalAlignment="Left" Margin="217,326,0,0" VerticalAlignment="Top" Width="100" Click="btnChosenAbbreviationValue_Click"/>
+
+    </Grid>
+</Window>
